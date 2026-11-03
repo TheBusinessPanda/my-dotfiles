@@ -192,13 +192,13 @@ bind(mainMod .. " + " .. float_key, function()
     if w ~= nil and w.floating then
         local mon = hl.get_active_monitor()
         if mon ~= nil then
-            local target_w = math.floor(mon.width * 0.7)
-            local target_h = math.floor(mon.height * 0.7)
+            local target_w = math.floor((mon.width / (mon.scale or 1)) * 0.7)
+            local target_h = math.floor((mon.height / (mon.scale or 1)) * 0.7)
             hl.dispatch(hl.dsp.window.resize({ x = target_w, y = target_h, relative = false }))
             local mon_x = mon.x or 0
             local mon_y = mon.y or 0
-            local target_x = mon_x + math.floor((mon.width - target_w) / 2)
-            local target_y = mon_y + math.floor((mon.height - target_h) / 2)
+            local target_x = mon_x + math.floor(((mon.width / (mon.scale or 1)) - target_w) / 2)
+            local target_y = mon_y + math.floor(((mon.height / (mon.scale or 1)) - target_h) / 2)
             hl.dispatch(hl.dsp.window.move({ x = target_x, y = target_y, relative = false }))
         end
     end
