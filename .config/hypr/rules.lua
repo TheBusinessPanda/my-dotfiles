@@ -81,13 +81,6 @@ hl.window_rule({
     opacity = "1.0 override",
 })
 
--- Prism Launcher solid
-hl.window_rule({
-    name = "solid-prism",
-    match = { class = "^(org.prismlauncher.PrismLauncher)$" },
-    opacity = "1.0 override",
-})
-
 -- Minecraft and Prism Launcher solid
 hl.window_rule({
     name = "solid-minecraft",
