@@ -16,7 +16,7 @@ Scope {
         ? ((player.trackArtist ? player.trackArtist + " - " : "") + player.trackTitle)
         : ""
     // nf-md play / pause
-    readonly property string text: (playing ? "\uDB81\uDC0A " : "\uDB80\uDFE4 ") + title
+    readonly property string text: (playing ? "\uDB80\uDFE4 " : "\uDB81\uDC0A ") + title
 
     readonly property int maxW: 130       // visible width in px
     readonly property int gap: 20         // gap between the two copies
