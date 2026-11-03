@@ -73,3 +73,24 @@ hl.window_rule({
     match = { title = "^(Save File)$" },
     float = true,
 })
+
+-- Keep reading apps solid
+hl.window_rule({
+    name = "solid-reading-apps",
+    match = { class = "^(brave-browser|firefox|[Cc]ode.*|[Dd]iscord|[Ss]potify)$" },
+    opacity = "1.0 override",
+})
+
+-- Prism Launcher solid
+hl.window_rule({
+    name = "solid-prism",
+    match = { class = "^(org.prismlauncher.PrismLauncher)$" },
+    opacity = "1.0 override",
+})
+
+-- Minecraft and Prism Launcher solid
+hl.window_rule({
+    name = "solid-minecraft",
+    match = { class = "^(Minecraft.*|org.prismlauncher.PrismLauncher)$" },
+    opacity = "1.0 override",
+})
