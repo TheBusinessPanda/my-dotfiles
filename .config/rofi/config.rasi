@@ -9,7 +9,7 @@ configuration {
 
     drun-display-format: "{name}";
     window-format: "{t:45}  ·  {c}";
-    font: "Iosevka 13";
+    font: "JetBrainsMono Nerd Font 13";
 
     location: 0;
     fixed-num-lines: true;
@@ -68,7 +68,7 @@ prompt {
     enabled: true;
     background-color: transparent;
     text-color: @border-color;
-    font: "Iosevka Nerd Font 12";
+    font: "JetBrainsMono Nerd Font 12";
     padding: 0;
     vertical-align: 0.5;
 }
@@ -76,7 +76,7 @@ prompt {
 entry {
     background-color: transparent;
     text-color: @border-color;
-    font: "Iosevka 12";
+    font: "JetBrainsMono Nerd Font 12";
     placeholder: "";
     placeholder-color: @fg-muted;
     padding: 0;
@@ -113,7 +113,7 @@ element-text {
     background-color: transparent;
     text-color: inherit;
     vertical-align: 0.5;
-    font: "Iosevka 11";
+    font: "JetBrainsMono Nerd Font 11";
 }
 
 element normal.normal,
