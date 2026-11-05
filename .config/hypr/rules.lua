@@ -77,7 +77,7 @@ hl.window_rule({
 -- Keep reading apps solid
 hl.window_rule({
     name = "solid-reading-apps",
-    match = { class = "^(brave-browser|firefox|[Cc]ode.*|[Dd]iscord|[Ss]potify)$" },
+    match = { class = "^(brave-browser|firefox|com.microsoft.[Vv][Ss][Cc]ode*|[Dd]iscord|[Ss]potify)$" },
     opacity = "1.0 override",
 })
 
